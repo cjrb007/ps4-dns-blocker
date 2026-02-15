@@ -5,17 +5,22 @@
 # This work is by depressive_monk, please give all the credit to him
 # https://www.reddit.com/user/depressive_monk/
 # Date: 28 Dec 2025
+
 # ===============================================================
-# PS4 ULTIMATE BLOCK LIST (Merged & Updated 2025)
+# Core update / service endpoints frequently used for updates/CDN
 # ===============================================================
-# --- NUEVOS SERVIDORES CRÍTICOS (Añadidos para 2025) ---
-0.0.0.0 gs-sec.ww.np.dl.playstation.net
-0.0.0.0 gs2.ww.prod.dl.playstation.net
-0.0.0.0 gst.prod.dl.playstation.net
 0.0.0.0 update.playstation.net
-0.0.0.0 p-v01.ribob01.net
+0.0.0.0 update.net.playstation.net
+0.0.0.0 oss.dl.playstation.net
+0.0.0.0 manuals.playstation.net
+0.0.0.0 get.net.playstation.net
+0.0.0.0 post.net.playstation.net
 0.0.0.0 ena.net.playstation.net
-# --- SERVIDORES DE ACTUALIZACIÓN DEL SISTEMA (Tu lista original) ---
+
+# ===============================================================
+# PS4 System Software Update Servers (Regional)
+# Regions observed in public configs: au br cn eu hk jp kr mx ru sa tw uk us
+# ===============================================================
 0.0.0.0 dau01.ps4.update.playstation.net
 0.0.0.0 dbr01.ps4.update.playstation.net
 0.0.0.0 dcn01.ps4.update.playstation.net
@@ -29,6 +34,7 @@
 0.0.0.0 dtw01.ps4.update.playstation.net
 0.0.0.0 duk01.ps4.update.playstation.net
 0.0.0.0 dus01.ps4.update.playstation.net
+
 0.0.0.0 fau01.ps4.update.playstation.net
 0.0.0.0 fbr01.ps4.update.playstation.net
 0.0.0.0 fcn01.ps4.update.playstation.net
@@ -42,6 +48,7 @@
 0.0.0.0 ftw01.ps4.update.playstation.net
 0.0.0.0 fuk01.ps4.update.playstation.net
 0.0.0.0 fus01.ps4.update.playstation.net
+
 0.0.0.0 hau01.ps4.update.playstation.net
 0.0.0.0 hbr01.ps4.update.playstation.net
 0.0.0.0 hcn01.ps4.update.playstation.net
@@ -55,28 +62,54 @@
 0.0.0.0 htw01.ps4.update.playstation.net
 0.0.0.0 huk01.ps4.update.playstation.net
 0.0.0.0 hus01.ps4.update.playstation.net
-# --- CDNs Y SERVICIOS ADICIONALES ---
-0.0.0.0 a01.cdn.update.playstation.org.edgesuite.net
-0.0.0.0 a192.d.akamai.net
-0.0.0.0 al02.cdn.update.playstation.net
-0.0.0.0 apicdn-p014.ribob01.net
-0.0.0.0 api-p014.ribob01.net
-0.0.0.0 artcdnsecure.ribob01.net
-0.0.0.0 asm.np.community.playstation.net
-0.0.0.0 get.net.playstation.net
-0.0.0.0 playstation.sony.akadns.net
-0.0.0.0 post.net.playstation.net
-0.0.0.0 ps4-eb.ww.np.dl.playstation.net
+
+# ===============================================================
+# Update portals / community endpoints seen in multiple lists
+# ===============================================================
 0.0.0.0 ps4updptl.eu.np.community.playstation.net
+0.0.0.0 ps4updptl.uk.np.community.playstation.net
 0.0.0.0 ps4updptl.jp.sp-int.community.playstation.net
 0.0.0.0 ps4.updptl.sp-int.community.playstation.net
-0.0.0.0 sf.api.np.km.playstation.net
+
+# ===============================================================
+# Game/content update download infrastructure (CDN + package endpoints)
+# These are the big ones that actually deliver patches/packages.
+# ===============================================================
+0.0.0.0 gs.ww.np.dl.playstation.net
+0.0.0.0 gs.ww.np.dl.playstation.net.edgesuite.net
+
+0.0.0.0 b0.ww.np.dl.playstation.net
+0.0.0.0 b0.ww.np.dl.playstation.net.edgesuite.net
+
+0.0.0.0 gs2.ww.prod.dl.playstation.net
+0.0.0.0 gs2.ww.prod.dl.playstation.net.edgesuite.net
+
+0.0.0.0 gst.prod.dl.playstation.net
+0.0.0.0 gst.prod.dl.playstation.net.edgesuite.net
+
+# Often referenced alongside gst/gs2
+0.0.0.0 sgst.prod.dl.playstation.net
+0.0.0.0 sgst.prod.dl.playstation.net.edgesuite.net
+
+# ===============================================================
+# Additional Sony/PSN endpoints repeatedly included in community “update block” lists
+# ===============================================================
+0.0.0.0 psndl.net
+0.0.0.0 psn-rsc.prod.dl.playstation.net
+0.0.0.0 apollo.dl.playstation.net
+0.0.0.0 apollo2.dl.playstation.net
+0.0.0.0 nsx.sec.np.dl.playstation.net
+0.0.0.0 oqesn.np.dl.playstation.net
+
+# ===============================================================
+# Extra endpoints from common PS4 “ultimate” lists (metadata/services that often relate to update flows)
+# ===============================================================
 0.0.0.0 themis.dl.playstation.net
 0.0.0.0 tmdb.np.dl.playstation.net
-0.0.0.0 t-prof.np.community.playstation.net
+0.0.0.0 ps4-eb.ww.np.dl.playstation.net
 0.0.0.0 ps4-system.sec.np.dl.playstation.net
+0.0.0.0 sf.api.np.km.playstation.net
 0.0.0.0 event.api.np.km.playstation.net
-0.0.0.0 ps4updptl.uk.np.community.playstation.net
 0.0.0.0 static-resource.np.community.playstation.net
 0.0.0.0 csla.np.community.playstation.net
 0.0.0.0 us.np.stun.playstation.net
@@ -84,3 +117,11 @@
 0.0.0.0 rnps-crl.dl.playstation.net
 0.0.0.0 urlconfig.api.playstation.com
 0.0.0.0 crepo.ww.dl.playstation.net
+
+# ===============================================================
+# CDN aliases that show up in some environments (optional but commonly blocked)
+# ===============================================================
+0.0.0.0 a01.cdn.update.playstation.org.edgesuite.net
+0.0.0.0 al02.cdn.update.playstation.net
+0.0.0.0 a192.d.akamai.net
+0.0.0.0 playstation.sony.akadns.net
